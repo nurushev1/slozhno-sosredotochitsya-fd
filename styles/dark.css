@@ -5,12 +5,15 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-image: url('../images/cover-image-dark.png');
+  --accent-color: #ff0070;
+  --background-color: #000536;
+  --main-title-color: #DB00FF;
+  --decor-text-color: #000028;
+  --content-text-color: #F1B2CE;
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-dark .page .header__decoration-text {
+  display: block;
 }
+  /* Вам также нужно будет написать ряд подобных селекторов */
