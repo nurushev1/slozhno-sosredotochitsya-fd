@@ -7,11 +7,11 @@
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
     <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/globals.css">
     <meta name="color-scheme" content="dark light">
     <link rel="icon" href="images/favicon.ico" sizes="any">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -57,13 +57,13 @@
       <div class="decoration-corner" aria-hidden="true"></div>
     </header>
     <main class="content">
-      <section class="content__section content__section--concentration">
-        <h2 class="content__section-title">
+      <section class="content__section content__section--concentration content__section--grid">
+        <h2 class="section-title">
           Почему сосредоточиться так сложно
         </h2>
         <div class="content__card-list">
           <article class="content__card">
-            <h3 class="content__card-title title-decor">Многозадачность</h3>
+            <h3 class="section-title content__card-title title-decor">Многозадачность</h3>
             <p class="content__card-text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
@@ -72,6 +72,7 @@
               <a
                 href="https://dana.org/news-and-insights/"
                 class="content__card-text-link"
+                target="_blank"
                 >выяснили</a
               >, что мозгу тяжело концентрироваться даже на двух делах
               одновременно. А когда в поле внимания попадает несколько важных
@@ -81,7 +82,7 @@
             </p>
           </article>
           <article class="content__card">
-            <h3 class="content__card-title title-decor">Дофамин</h3>
+            <h3 class="section-title content__card-title title-decor">Дофамин</h3>
             <p class="content__card-text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -96,12 +97,12 @@
         </div>
       </section>
       <section class="content__section content__section--attention">
-        <h2 class="content__section-title">
+        <h2 class="section-title">
           Что снижает концентрацию внимания?
         </h2>
         <div class="content__card-list">
           <article class="content__card">
-            <h3 class="content__card-title title-decor">Многозадачность</h3>
+            <h3 class="section-title content__card-title title-decor">Многозадачность</h3>
             <p class="content__card-text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -112,7 +113,7 @@
             </p>
           </article>
           <article class="content__card">
-            <h3 class="content__card-title title-decor">Еда</h3>
+            <h3 class="section-title content__card-title title-decor">Еда</h3>
             <p class="content__card-text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -123,7 +124,7 @@
             </p>
           </article>
           <article class="content__card">
-            <h3 class="content__card-title title-decor">Гаджеты</h3>
+            <h3 class="section-title content__card-title title-decor">Гаджеты</h3>
             <p class="content__card-text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -136,18 +137,18 @@
           </article>
         </div>
       </section>
-      <section class="content__section content__section--goldfish">
-        <h2 class="content__section-title">
+      <section class="content__section content__section--goldfish content__section--grid">
+        <h2 class="section-title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
         <div class="content__card-list">
-          <h3 class="content__card-title title-decor">
+          <h3 class="section-title content__card-title title-decor">
             5 простых (на самом деле не очень) советов
           </h3>
           <article class="content__card">
             <h4
-              class="content__card-title title-decor content__card-title_style_alternate"
+              class="section-title content__card-title title-decor content__card-title_style_alternate"
             >
               Представьте небо и облака
             </h4>
@@ -164,7 +165,7 @@
           </article>
           <article class="content__card">
             <h4
-              class="content__card-title title-decor content__card-title_style_alternate"
+              class="section-title content__card-title title-decor content__card-title_style_alternate"
             >
               Включите музыку
             </h4>
@@ -177,7 +178,7 @@
           </article>
           <article class="content__card">
             <h4
-              class="content__card-title title-decor content__card-title_style_alternate"
+              class="section-title content__card-title title-decor content__card-title_style_alternate"
             >
               Прогуляйтесь
             </h4>
@@ -186,6 +187,7 @@
               <a
                 href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                 class="content__card-text-link"
+                target="_blank"
                 >показал</a
               >, что созерцание природы повышает концентрацию, в то время как
               после просмотра городских пейзажей она наоборот понижается. Можно
@@ -196,7 +198,7 @@
           </article>
           <article class="content__card">
             <h4
-              class="content__card-title title-decor content__card-title_style_alternate"
+              class="section-title content__card-title title-decor content__card-title_style_alternate"
             >
               Хорошо ешьте
             </h4>
@@ -209,7 +211,7 @@
           </article>
           <article class="content__card">
             <h4
-              class="content__card-title title-decor content__card-title_style_alternate"
+              class="section-title content__card-title title-decor content__card-title_style_alternate"
             >
               Читайте
             </h4>
@@ -223,34 +225,34 @@
         </div>
       </section>
       <section class="content__section content__section--pictures">
-        <h3 class="content__card-title title-decor">А можно в картинках?</h3>
+        <h3 class="section-title content__card-title title-decor">А можно в картинках?</h3>
         <div class="content__card-images">
           <img
-            class="content__card-image_sunset"
+            class="content__card-image content__card-image_sunset"
             src="images/sunset.png"
             alt="рисунок пейзажа"
             loading="lazy"
           >
           <img
-            class="content__card-image_ice-cream"
+            class="content__card-image content__card-image_ice-cream"
             src="images/ice-cream.png"
             alt="рисунок десерта"
             loading="lazy"
           >
           <img
-            class="content__card-image_tape"
+            class="content__card-image content__card-image_tape"
             src="images/tape.png"
             alt="рисунок музыкального плеера"
             loading="lazy"
           >
           <img
-            class="content__card-image_books"
+            class="content__card-image content__card-image_books"
             src="images/books.png"
             alt="рисунок книг"
             loading="lazy"
           >
           <img
-            class="content__card-image_street"
+            class="content__card-image content__card-image_street"
             src="images/street.png"
             alt="рисунок улицы"
             loading="lazy"

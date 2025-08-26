@@ -11,6 +11,9 @@
   --main-title-color: #FFC2E6;
   --decor-text-color: #353430;
   --content-text-color: #353430;
+  --corner-color: #353430;
+  --button-hover-border-color: #32312D66;
+  --menu-button-color: #353430;
 }
 
 .theme-light .page .header__decoration-text {
@@ -25,6 +28,9 @@
     --main-title-color: #FFC2E6;
     --decor-text-color: #353430;
     --content-text-color: #353430;
+    --corner-color: #353430;
+    --button-hover-border-color: #32312D66;
+    --menu-button-color: #353430;
   }
 
   .header__decoration-text {

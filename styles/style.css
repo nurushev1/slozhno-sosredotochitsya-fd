@@ -34,7 +34,7 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 1px 12.5px 5px;
-  color: var(--accent-color);
+  color: var(--menu-button-color);
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -52,11 +52,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #ff007066;
+  border: 1px solid var(--button-hover-border-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-button-color);
   pointer-events: none;
 }
 
@@ -75,13 +75,13 @@
 .header__decoration-text::after {
   content: "";
   display: inline-block;
+  margin-inline-start: 10px;
   border-radius: 50%;
   vertical-align: 2px;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
   background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
-  margin-inline-start: 10px;
 }
 
 .header__title {
@@ -130,15 +130,15 @@
 }
 
 .decoration-corner::before {
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--corner-color);
+  border-block-start: 1px solid var(--corner-color);
   inset-block-start: 10px;
   inset-inline-end: 10px;
 }
 
 .decoration-corner::after {
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--corner-color);
+  border-block-end: 1px solid var(--corner-color);
   inset-block-end: 10px;
   inset-inline-start: 10px;
 }
@@ -151,8 +151,8 @@
   margin-block: 40px;
 }
 
-.content__section-title {
-  color: var(--accent-color);
+.section-title {
+  color: var(--decor-text-color);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -161,10 +161,7 @@
 
 .content__card-title {
   margin-block: 20px 10px;
-  font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 23.4px;
+  color: var(--decor-text-color);
 }
 
 .content__card-text {
@@ -173,6 +170,10 @@
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
+}
+
+.content__card-text + .content__card-text {
+  margin-top: 10px;
 }
 
 .content__card-text-link {
@@ -207,27 +208,7 @@
   gap: 10px;
 }
 
-.content__card-image_sunset {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.content__card-image_ice-cream {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.content__card-image_tape {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.content__card-image_books {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.content__card-image_street {
+.content__card-image {
   inline-size: 100%;
   block-size: 100%;
 }
@@ -275,7 +256,6 @@
 
   .header__title {
     justify-self: start;
-    align-self: center;
     margin-inline-start: 0px;
     margin-block-start: 1px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -294,7 +274,7 @@
     margin-block: 60px;
   }
 
-  .content__section--concentration {
+  .content__section--grid {
     display: grid;
     grid-template-columns: 32.4% 64.8%;
     align-items: start;
@@ -307,15 +287,8 @@
     margin-block-start: 0;
   }
 
-  .content__section--attention .content__section-title {
+  .content__section--attention > h2.section-title:first-of-type {
     max-width: 236px;
-  }
-
-  .content__section--goldfish {
-    display: grid;
-    grid-template-columns: 32.42% 64.84%;
-    align-items: start;
-    gap: 20px;
   }
 
   .content__card-list > h3.content__card-title {
@@ -325,38 +298,28 @@
   .content__card-image_sunset {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    inline-size: 100%;
-    block-size: 100%;
   }
 
   .content__card-image_ice-cream {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
     object-fit: cover;
-    inline-size: 100%;
-    block-size: 100%;
   }
 
   .content__card-image_tape {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
     object-fit: cover;
-    inline-size: 100%;
-    block-size: 100%;
   }
 
   .content__card-image_books {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    inline-size: 100%;
-    block-size: 100%;
   }
 
   .content__card-image_street {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
-    inline-size: 100%;
-    block-size: 100%;
   }
 
   .content__card-images {
@@ -368,7 +331,6 @@
   }
 
   .content__section--pictures .content__card-title {
-    margin-block-start: 0;
     margin-block-end: 20px;
   }
 
@@ -400,7 +362,7 @@
     grid-template-columns: 32.01% 65.96%;
   }
 
-  .content__section--attention .content__section-title {
+  .content__section--attention > h2.section-title:first-of-type {
     max-inline-size: 315px;
   }
 
