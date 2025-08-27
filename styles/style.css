@@ -152,7 +152,7 @@
 }
 
 .section-title {
-  color: var(--decor-text-color);
+  color: var(--section-title-color);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -327,7 +327,6 @@
     grid-template-columns: 31.46% 31.59% 31.46%;
     grid-template-rows: 24.61% 29.49% 40.77%;
     gap: 20px;
-    block-size: 780px;
   }
 
   .content__section--pictures .content__card-title {
@@ -384,6 +383,5 @@
   .content__card-images {
     grid-template-columns: 32.01% 32.01% 32.01%;
     grid-template-rows: 24.8% 30.05% 41.31%;
-    block-size: 1048px;
   }
 }
